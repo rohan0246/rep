@@ -3,7 +3,7 @@ pipeline {
    stages{
     stage('maven') {
      steps {
-       withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'mav', mavenSettingsConfig: 'null') {
+       withMaven(globalMavenSettingsConfig: 'null',maven: 'mav', mavenSettingsConfig: 'null') {
     // some block
 }
   }
