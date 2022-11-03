@@ -1,12 +1,12 @@
-pipeline{
-  agent any{
-  stage('maven') {
-  steps {
-    withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'mav', mavenSettingsConfig: 'null') {
+pipeline {
+   agent any
+    stage('maven') {
+     steps {
+       withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'mav', mavenSettingsConfig: 'null') {
     // some block
 }
   }
 }
 }
-}
+
   
